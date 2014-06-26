@@ -4,5 +4,5 @@
                echo $content;
                ?>
           </div>
-      <!-- fin container -->
+      <!-- fin containeur -->
      <?php include('./includes/footer.inc.php'); ?>
