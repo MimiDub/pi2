@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-   <head>
-      <meta charset="utf-8">
-      <!-- Ce commentaire qui suite (balise meta) c'est pour
-         fixerle probleme de validation -->
-      <!--[if ie]>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Journal Eureka</title>
+    <head>
+        <meta charset="utf-8">
+        <!-- Ce commentaire qui suite (balise meta) c'est pour
+            fixer le probleme de validation -->
+        <!--[if ie]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Journal Eureka</title>
       
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-	    <link href="css/contact.css" rel="stylesheet">
-	    <link href="css/inscription.css" rel="stylesheet">
-      <link href="css/categories.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
-      <link href="css/jacques.css" rel="stylesheet">
-      <link href="css/font-awesome.css" rel="stylesheet">  
-
-      
-   </head>
-   <!-- début document -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/contact.css" rel="stylesheet">
+	<link href="css/inscription.css" rel="stylesheet">
+        <link href="css/categories.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/jacques.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">  
+ 
+    </head>
+   <!-- début du document -->
    <body>
-      <!-- header (haut de page) -->
+       
+        <!-- header (haut de page) -->
       
-      <!-- fin header -->
-      <!-- container qui va centrer le reste du site -->
-      <div id="retour" class="container container-globale">
-         <!-- section qui va comporter le carousel -->
-         <header class="header-principal">
-           <div class="menu">       
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container fixed">
-	  <!--<a class="navbar-brand hidden-xs" href="index.php"><img src="./img/logo.png" alt="logo"/></a>-->
-          <figure class=" hidden-xs">
-              <h1>EUREKA</h1>
-              <span>Journal d'idées</span>
-          </figure>
-	  <div class="inscription">
-      <button type="button" class="btn btn-primary btn-sm">Connexion</button>
-      <button id="inscription" type="button" class="btn btn-default btn-sm">Inscription</button>
-          
-	</div>
+        <!-- fin header -->
+        <!-- container qui va centrer le reste du site -->
+        <div id="retour" class="container container-globale">
+            <!-- section qui va comporter le carousel -->
+            <header class="header-principal">
+            <div class="menu">       
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container fixed">
+                <!--<a class="navbar-brand hidden-xs" href="index.php"><img src="./img/logo.png" alt="logo"/></a>-->
+                <figure class=" hidden-xs">
+                    <h1>EUREKA</h1>
+                    <span>Journal d'idées</span>
+                </figure>
+                <div class="inscription">
+                    <button type="button" class="btn btn-primary btn-sm">Connexion</button>
+                    <button id="inscription" type="button" class="btn btn-default btn-sm">Inscription</button>
+                </div>
       </div>
     </nav>
 
