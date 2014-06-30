@@ -35,13 +35,14 @@
                         <!-- Boîte de recherche dans l'entête -->
                         <div class="panel-heading">
                             <form class="form-inline form-search" role="form">
-                                <span class='col-md-3'><?= "CATÉGORIE :".$categorie ; ?></span> 
+                                <span class='col-md-3'>CATÉGORIE : <?= $categorie ?></span> 
                                 Rechercher :
                                 <input type="text" class="form-control input-large boite-recherche" placeholder="Recherche">
                                 <span class="glyphicon glyphicon-search"></span></a>
                             </form>
                         </div>
                     
+                        <!-- Aller les chercher les articles à afficher -->
                     
                         <div class="panel-body m-panel-body">
 
