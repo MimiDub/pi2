@@ -1,16 +1,7 @@
 
-<?php
-    if (isset($_GET['cat'])) {
-        $categorie = $_GET['cat'];
-    }
-    else {
-        $categorie = 'Santé';
-    }
-?>
-
       <article class="enssemble-articles">
             <div class="row">
-                
+                <?php var_dump($article_ID); ?>
                 <!-- - - - - - - - - - Colonne de gauche (MENU DES ARTICLES) -->
                 <div class="col-sm-2">
                     <div class="panel panel-default ">
@@ -35,23 +26,28 @@
                         <!-- Boîte de recherche dans l'entête -->
                         <div class="panel-heading">
                             <form class="form-inline form-search" role="form">
-                                <span class='col-md-3'>CATÉGORIE : <?= $categorie ?></span> 
+                                <span class='col-md-3'><?php echo "Catégorie : . $monArticle[$categorie_ID];" ?></span> 
                                 Rechercher :
                                 <input type="text" class="form-control input-large boite-recherche" placeholder="Recherche">
                                 <span class="glyphicon glyphicon-search"></span></a>
                             </form>
                         </div>
                     
-                        <!-- Aller les chercher les articles à afficher -->
                     
                         <div class="panel-body m-panel-body">
 
                             <div class="row m-panel-body">
-                                <img src="img/articles/auto_300.jpg" class="img-responsive pull-right" alt="">
-                                Numéro de projet : T00122<br />
-                                Date : 4 juin 2014<br />
-                                Catégorie : Santé<br />
-                                Brevet : NON <br />
+                                
+                                <!--<img src="img/articles/<php echo $monArticle[$article_image]; ?>" class="img-responsive pull-right" alt="<php echo $monArticle[7]; ?>"> -->
+                                
+                                Date : <?php echo $monArticle[$date_soumission_fr]; ?><br />
+                                Catégorie : <?php echo $monArticle[8]; ?><br />
+                                <?php 
+                                if ($monArticle[11]==NULL)
+                                    $brevet = "NONNNN";
+                                else $brevet = "OUI";
+                                ?>
+                                Brevet : <?php echo $brevet; ?> <br />
                                 Financé : NON <br />
                                 Recherche financement : OUI&nbsp;&nbsp; <a class="btn btn-default btn-financer" href="#" >Je veux FINANCER ce projet</a> <br />
 

@@ -45,6 +45,6 @@
             });
 
 </script> 
-<?php include('./content/modal.php');?>
+<?php //include('./content/modal.php');?>
    </body>
 </html>

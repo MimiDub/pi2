@@ -8,10 +8,10 @@ if(!isset($_GET["p"])){$_GET["p"]="accueil";}
 // si tous va bien la page va s'afficher
 
 ob_start();
-include "content/".$_GET["p"].".php";
+include "controleurs/".$_GET["p"].".php";
  
 $content = ob_get_contents();
 ob_end_clean();
 // template qui va recevoir chaque page dans la partie  contenu
-include "htmlWrapper.php";
+include "./vues/htmlWrapper.php";
 ?>
