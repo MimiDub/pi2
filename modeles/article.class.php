@@ -32,7 +32,7 @@ class article {
     }
 
     public function getArticle($article_ID) {
-        
+        echo "<br />Au début de getArticle, article_ID =".$article_ID."<br />";
         $req = $this->getBD()->query("SELECT article_ID,
                                                DATE_FORMAT(art_date_soumis, '%d/%m/%Y à %Hh%imin%ss')
                                                     AS date_soumission_fr,
@@ -47,25 +47,25 @@ class article {
                                                financement_ID,
                                                brevet_ID
                                         FROM articles
-                                        WHERE id = $article_ID");
+                                        WHERE article_ID = $article_ID");
         
         if (!$req) {
             
             
-            throw new Exception("Resultat introuvable sur le serveur : " . HOST . "de get_article_accueil");
+            throw new Exception("Resultat introuvable sur le serveur : " . HOST . " de article=> getArticle");
             
         } else {
             
-            var_dump("1");
+           
             while ($article = $req->fetch(PDO::FETCH_ASSOC)) {
                 $monArticle = $article;
                 $this->monArticle = $monArticle;
             }
-            var_dump("2");
+            
         }
         
         return $this->monArticle;
-
+/*
         
         $article = array("id"              =>$article_ID,
                          "date_soumission" => $date_soumission_fr, 
@@ -81,7 +81,7 @@ class article {
                           "brevet_ID" => $brevet_ID 
                         );
                 
-        return $article;
+        return $article; */
     }
     public function get_articles($offset, $limit) {
 

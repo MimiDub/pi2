@@ -52,8 +52,8 @@
                                     <tbody>
                                     <a href='articles.php' target='_blank'>
                                         <tr>
-                                            <td><a href='index.php?p=articles' target='_blank'><img src="img/categories/adn_150.png" width="70" height="70" alt="ordinateur ADN"</a></td>
-                                            <td><a href='index.php?p=articles' target='_blank'>Un ordinateur qui fonctionne à l'ADN</a></td>    
+                                            <td><a href='index.php?p=articleCont' target='_blank'><img src="img/categories/adn_150.png" width="70" height="70" alt="ordinateur ADN"</a></td>
+                                            <td><a href='index.php?p=articleCont' target='_blank'>Un ordinateur qui fonctionne à l'ADN</a></td>    
                                             <td class="td-milieu"><i class="glyphicon glyphicon-ok"></i></td>
                                             <td class="td-milieu"><i class="glyphicon glyphicon-ok"></i></td>
                                         </tr>

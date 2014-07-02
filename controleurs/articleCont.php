@@ -9,6 +9,7 @@ try {
     
     if (!$bdd) {
         throw new Exception("Connexion Impossible à la base de données : " . HOST);
+        
     }
     // Mon article est un Array contenant toutes les données pour l'article demandé sous forme : 
     /* $monArticle = array(  0  "id"                =>$article_ID,
@@ -25,10 +26,16 @@ try {
                             11  "brevet_ID"       => $brevet_ID 
                         ); */
     $monArticle = $bdd->getArticle("22");
-    $article_ID = $monArticle[0];
-    $date = $monArticle[1];
     
-    include_once('./vues/content/article.php');
+    $ID = $monArticle["article_ID"];
+    $date = $monArticle["date_soumission_fr"];
+    $titre = $monArticle["article_titre"];
+    $contenu = $monArticle["article_contenu"];
+    $categorie = $monArticle["categorie_ID"];
+    $financement = $monArticle["financement_ID"];
+    $brevet = $monArticle["brevet_ID"];
+    
+    include_once('./vues/content/articleVue.php');
     
 }
 catch (Exception $e) {

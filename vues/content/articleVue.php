@@ -1,7 +1,7 @@
 
       <article class="enssemble-articles">
             <div class="row">
-                <?php var_dump($article_ID); ?>
+                
                 <!-- - - - - - - - - - Colonne de gauche (MENU DES ARTICLES) -->
                 <div class="col-sm-2">
                     <div class="panel panel-default ">
@@ -26,7 +26,7 @@
                         <!-- Boîte de recherche dans l'entête -->
                         <div class="panel-heading">
                             <form class="form-inline form-search" role="form">
-                                <span class='col-md-3'><?php echo "Catégorie : . $monArticle[$categorie_ID];" ?></span> 
+                                <span class='col-md-3'><?php echo "Catégorie : $categorie"; ?></span> 
                                 Rechercher :
                                 <input type="text" class="form-control input-large boite-recherche" placeholder="Recherche">
                                 <span class="glyphicon glyphicon-search"></span></a>
@@ -40,29 +40,25 @@
                                 
                                 <!--<img src="img/articles/<php echo $monArticle[$article_image]; ?>" class="img-responsive pull-right" alt="<php echo $monArticle[7]; ?>"> -->
                                 
-                                Date : <?php echo $monArticle[$date_soumission_fr]; ?><br />
-                                Catégorie : <?php echo $monArticle[8]; ?><br />
+                                Date : <?php echo $date ?><br />
+                                Catégorie : <?php echo $categorie; ?><br />
                                 <?php 
-                                if ($monArticle[11]==NULL)
-                                    $brevet = "NONNNN";
-                                else $brevet = "OUI";
+                                if ($brevet==NULL)
+                                    $brevetOut = "NON";
+                                else $brevetOut = "OUI";
                                 ?>
-                                Brevet : <?php echo $brevet; ?> <br />
-                                Financé : NON <br />
+                                Brevet : <?php echo $brevetOut; ?> <br />
+                                <?php 
+                                if ($financement==NULL)
+                                    $financementOut = "NON";
+                                else $financementOut = "OUI";
+                                ?>
+                                Financé : <?php echo $financementOut; ?>  <br />
                                 Recherche financement : OUI&nbsp;&nbsp; <a class="btn btn-default btn-financer" href="#" >Je veux FINANCER ce projet</a> <br />
 
-                                <h3>La voiture à hydrogène plus forte que l'électrique ?</h3>
+                                <h3><?php echo $titre ?></h3>
                                 <p>
-                                    En 2050, c'est une quasi certitude, la voiture à essence aura fait long feu. 
-                                    Et la voiture électrique est encore loin de pouvoir la remplacer complètement, 
-                                    faute d'autonomie suffisante. Le futur carburant pour alimenter le parc 
-                                    automobile sera donc peut-être l'hydrogène. Le projet HyWays, financé par l'UE,
-                                    a calculé qu'il faudrait dépenser 60 milliards d'euros d'ici 2030 pour mettre 
-                                    en place l'infrastructure nécessaires à la circulation de 16 millions de 
-                                    véhicules à hydrogène d'ici 2030. Plusieurs problèmes restent néanmoins à 
-                                    résoudre : le stockage (pile à combustible) et surtout la production en grande 
-                                    quantité d'hydrogène, qui n'est pour l'instant possible qu'à partir... 
-                                    d'énergies fossiles.
+                                    <?php echo $contenu ?>
                                 </p>
 
                                 <p>Auxerunt haec vulgi sordidioris audaciam, quod cum ingravesceret penuria commeatuum, famis et furoris inpulsu Eubuli cuiusdam inter suos clari domum ambitiosam ignibus subditis inflammavit rectoremque ut sibi iudicio imperiali addictum calcibus incessens et pugnis conculcans seminecem laniatu miserando discerpsit. post cuius lacrimosum interitum in unius exitio quisque imaginem periculi sui considerans documento recenti similia formidabat.

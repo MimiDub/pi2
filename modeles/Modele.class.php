@@ -47,7 +47,7 @@ class BD
         if (!$req) {
             
             
-            throw new Exception("Resultat introuvable sur le serveur : " . HOST . "de get_article_accueil");
+            throw new Exception("Resultat introuvable sur le serveur : " . HOST . " ... de get_article_accueil");
             
         } else {
             
